@@ -25,14 +25,61 @@
     </head>
 
     <body>
+      <!-- Modals -->
+      <!-- Modal Creativity -->
+      <aside id="creativity" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="design" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">Creativity</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+          </div><!-- /.modal-content Creativity -->
+        </div><!-- /.modal-dialog Creativity -->
+      </aside><!-- /.modal Creativity -->    
+
+      <!-- Modal Design -->
+      <aside id="design" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="design" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">Design</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+          </div><!-- /.modal-content Design -->
+        </div><!-- /.modal-dialog Design -->
+      </aside><!-- /.modal Design -->   
+
+      <!-- Modal Technology -->
+      <aside id="technology" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="technology" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title">Technology</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+          </div><!-- /.modal-content Technology -->
+        </div><!-- /.modal-dialog Technology -->
+      </aside><!-- /.modal Technology --> 
+      <!-- End Modals -->
+
       <div class="container-fluid">
         <header role="main">
           <div class="row"> <!-- Header Row -->
             <div class="col-md-3 col-sm-3 col-xs-4">
-              <img class="img-responsive" src="img/logo_white.png">
+              <img class="img-responsive" src="img/logo.png">
             </div>
             <div class="col-md-9 col-sm-9 col-xs-8">
-              <h1 class="thin uppercase text-right">Daniel Pérez Arrieta</h1>
+              <h1 class="uppercase text-right">Daniel Pérez Arrieta</h1>
               <h2 class="uppercase text-right">Front-End Developer</h2>
             </div>
           </div>  
@@ -41,42 +88,42 @@
 
           <div class="row"><!-- Claim Section -->
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <img class="img-responsive" src="http://placehold.it/960x400">  
+              <img class="img-responsive" src="img/super-lopez.jpg">  
             </div>
           </div>
           
           <section>
             <div class="row">
               <div class="col-md-12  col-sm-12 col-xs-12">
-                <h2 class="feature-text">Featured Work</h2>
+                <h2 class="feature-text"><i>Featured Work</i></h2>
               </div>
             </div>  
             <div class="row"> 
               <div class="col-md-4 col-sm-4 col-xs-12">         
-                <article>
+                <article class="project">
                   <header>
-                    <img class="img-responsive" src="http://placehold.it/568x300">
+                    <a href="#creativity" data-toggle="modal"><img class="img-responsive" src="img/super-lopez-creativity.jpg"></a>
                   </header>
-                  <h1>APPIFY</h1>
-                  <p><a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a></p>
+                  <h1>CREATIVITY</h1>
+                  <p><a href="#creativity" data-toggle="modal">More info</a></p>
                 </article>
               </div>     
               <div class="col-md-4 col-sm-4 col-xs-12">
-                <article>
+                <article class="project">
                   <header>
-                    <img class="img-responsive" src="http://placehold.it/568x300">
+                    <a href="#design" data-toggle="modal"><img class="img-responsive" src="img/super-lopez-design.jpg"></a>
                   </header>
-                  <h1>SUNFLOWER</h1>
-                  <p><a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a></p>
+                  <h1>DESIGN</h1>
+                  <p><a href="#design" data-toggle="modal">More info</a></p>
                 </article>
               </div>  
               <div class="col-md-4 col-sm-4 col-xs-12">
-                <article>
+                <article class="project">
                   <header>
-                    <img class="img-responsive" src="http://placehold.it/568x300">
+                    <a href="#technology" data-toggle="modal"><img class="img-responsive" src="img/super-lopez-team.jpg"></a>
                   </header>
-                  <h1>BOKEH</h1>
-                  <p><a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a></p>
+                  <h1>TECHNOLOGY</h1>
+                  <p><a href="#technology" data-toggle="modal">More info</a></p>
                 </article> 
               </div>  
             </div>               
@@ -88,3 +135,6 @@
       <script src="js/main.js"></script>
     </body>
 </html>
+
+
+

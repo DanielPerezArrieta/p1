@@ -17,7 +17,9 @@ body {
 header[role=main] {
   margin: 15px 0 15px;
   padding: 5px 0 5px;
-  border-bottom: 3px solid #ddd;  
+  border-bottom: 3px solid #1c2135;  
+  padding-right: 10px;
+  border-radius: 20px;
 }
 
 header[role=main] h2 {
@@ -29,7 +31,8 @@ header[role=main] img {
 }
 
 section {
-  padding: 20px 0 20px;
+  margin: 20px 0 20px;
+  padding: 0 20px;
 }
 
 article {
@@ -39,6 +42,14 @@ article {
 a,
 a:hover {
   text-decoration: none;
+}
+
+section {
+  border-radius: 10px;
+}
+
+section img {
+  border-radius: 8px;
 }
 /**
  * 2. Typography
@@ -69,7 +80,7 @@ p {
 }
 
 /**
- * 3. Colors
+ * 3. Basic Colors
  */
 
 body,
@@ -79,6 +90,20 @@ a {
 
 a:hover {
   color: #999;
+}
+
+header[role=main] h1,
+section article h1 {
+  color: #1c2135;
+}
+
+section,
+header[role=main] {
+  background-color: rgba(188, 187, 187, 0.12); 
+}
+
+header[role=main] h2 {
+  color: #e70430;
 }
 
 /**
@@ -108,6 +133,8 @@ section article p {
 
 .feature-text {
   text-align: center;
+  *color: #969696;
+  color: #fff;
 }
 
 /**
