@@ -5,7 +5,7 @@ Udacity Project 1
 
 ## Overview
 
-Project 1: `Mockup to Website
+Project 1: `Mockup to Website`
 
 
 ## Basic work
