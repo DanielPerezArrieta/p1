@@ -1,0 +1,178 @@
+/* 1. Basic Layout */
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 20px 0 20px;
+  padding: 0 20px;
+}
+
+article {
+  padding: 0 15% 0;
+}
+
+article h1 {
+  margin-bottom: 0;
+}
+
+section {
+  border-radius: 10px;
+}
+
+section img {
+  border-radius: 8px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* 2. Typography */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+article > h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* 3. Basic Colors */
+
+body,
+a {
+  color: #bcbbbb;
+}
+
+a:hover {
+  color: #999;
+}
+
+section article h1 {
+  color: #1c2135;
+}
+
+section {
+  background-color: rgba(188, 187, 187, .12); 
+}
+
+/* 4. Alignment and Positioning  */
+
+section article h1,
+section article p {
+  text-align: center;
+}
+
+/* 5. Custom Classes / Custom Bootstrap */
+
+.main-header {
+  margin: 15px 0 15px;
+  padding: 5px 0 5px;
+  border-bottom: 3px solid #1c2135;
+  padding-right: 10px;
+  border-radius: 20px;
+  background-color: rgba(188, 187, 187, .12);
+}
+
+.main-header h1 {
+  color: #1c2135;
+}
+
+.main-header h2 {
+  margin: 0;
+  font-size: 1em;
+  color: #e70430;
+}
+
+.main-header img {
+  max-width: 100px;
+}
+
+.logo {
+  max-width: 110px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.feature-text {
+  text-align: center;
+  color: #fff;
+  background-color: #ddd;
+  padding-left: 8px;
+  border-radius: 8px;
+}
+
+.modal-body ol {
+  margin-top: 15px;
+}
+
+.modal-body li {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.modal-body li:nth-child(1) {
+  color: red;
+}
+
+.modal-body li:nth-child(2) {
+  color: blue;
+}
+
+.modal-body li:nth-child(3) {
+  color: green;
+}
+
+.modal-body li:nth-child(4) {
+  color: yellow;
+}
+
+/* 6. Media Queries */
+
+@media only screen and (min-width: 770px)  {
+
+  article {
+    padding: 0;
+  }
+
+  article h1 {
+    font-size: 1.8em;
+  }
+
+  .feature-text {
+    text-align: left;
+    font-size: 1.7em;
+  }
+
+  .modal-body li {
+    font-size: 1.3em;
+  }
+}
+
+
+
+
+
+
