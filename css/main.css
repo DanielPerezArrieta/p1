@@ -1,33 +1,8 @@
-
-
-/* ==========================================================================
-   Daniel Perez Arrieta
-   ========================================================================== */
-
-
-/**
- * 1. Basic Layout
- */
+/* 1. Basic Layout */
 
 body {
   max-width: 960px;
   margin: 0 auto;
-}
-
-header[role=main] {
-  margin: 15px 0 15px;
-  padding: 5px 0 5px;
-  border-bottom: 3px solid #1c2135;  
-  padding-right: 10px;
-  border-radius: 20px;
-}
-
-header[role=main] h2 {
-  margin: 0;
-}
-
-header[role=main] img {
-  max-width: 100px;
 }
 
 section {
@@ -39,9 +14,8 @@ article {
   padding: 0 15% 0;
 }
 
-a,
-a:hover {
-  text-decoration: none;
+article h1 {
+  margin-bottom: 0;
 }
 
 section {
@@ -51,9 +25,13 @@ section {
 section img {
   border-radius: 8px;
 }
-/**
- * 2. Typography
- */
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* 2. Typography */
 
 body {
   font-family: 'Lato', sans-serif;
@@ -71,17 +49,11 @@ h2 {
   font-size: 1.6em;
 }
 
-header[role=main] h2 {
-  font-size: 1em;
-}
-
 p {
   font-size: 1em;
 }
 
-/**
- * 3. Basic Colors
- */
+/* 3. Basic Colors */
 
 body,
 a {
@@ -92,32 +64,45 @@ a:hover {
   color: #999;
 }
 
-header[role=main] h1,
 section article h1 {
   color: #1c2135;
 }
 
-section,
-header[role=main] {
-  background-color: rgba(188, 187, 187, 0.12); 
+section {
+  background-color: rgba(188, 187, 187, .12); 
 }
 
-header[role=main] h2 {
-  color: #e70430;
-}
-
-/**
- * 4. Alignment and Positioning
- */
+/* 4. Alignment and Positioning  */
 
 section article h1,
 section article p {
   text-align: center;
 }
 
-/**
- * 5. Custom Classes
- */
+/* 5. Custom Classes / Custom Bootstrap */
+
+.main-header {
+  margin: 15px 0 15px;
+  padding: 5px 0 5px;
+  border-bottom: 3px solid #1c2135;
+  padding-right: 10px;
+  border-radius: 20px;
+  background-color: rgba(188, 187, 187, .12);
+}
+
+.main-header h1 {
+  color: #1c2135;
+}
+
+.main-header h2 {
+  margin: 0;
+  font-size: 1em;
+  color: #e70430;
+}
+
+.main-header img {
+  max-width: 100px;
+}
 
 .logo {
   max-width: 110px;
@@ -133,13 +118,38 @@ section article p {
 
 .feature-text {
   text-align: center;
-  *color: #969696;
   color: #fff;
+  background-color: #ddd;
+  padding-left: 8px;
+  border-radius: 8px;
 }
 
-/**
- * 6. Media Queries
- */
+.modal-body ol {
+  margin-top: 15px;
+}
+
+.modal-body li {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.modal-body li:nth-child(1) {
+  color: red;
+}
+
+.modal-body li:nth-child(2) {
+  color: blue;
+}
+
+.modal-body li:nth-child(3) {
+  color: green;
+}
+
+.modal-body li:nth-child(4) {
+  color: yellow;
+}
+
+/* 6. Media Queries */
 
 @media only screen and (min-width: 770px)  {
 
@@ -156,7 +166,9 @@ section article p {
     font-size: 1.7em;
   }
 
-
+  .modal-body li {
+    font-size: 1.3em;
+  }
 }
 
 
